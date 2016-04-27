@@ -30,6 +30,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Navigation
 	## Links
 	## Menus
+	## Other Navigation
 # Accessibility
 # Alignments
 # Clearings
@@ -49,13 +50,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Normalize
 --------------------------------------------------------------*/
 html {
-	font-family: sans-serif;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust:     100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
 }
 
 body {
-	margin: 0;
+    margin: 0;
 }
 
 article,
@@ -70,106 +71,106 @@ menu,
 nav,
 section,
 summary {
-	display: block;
+    display: block;
 }
 
 audio,
 canvas,
 progress,
 video {
-	display: inline-block;
-	vertical-align: baseline;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 audio:not([controls]) {
-	display: none;
-	height: 0;
+    display: none;
+    height: 0;
 }
 
 [hidden],
 template {
-	display: none;
+    display: none;
 }
 
 a {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 a:active,
 a:hover {
-	outline: 0;
+    outline: 0;
 }
 
 abbr[title] {
-	border-bottom: 1px dotted;
+    border-bottom: 1px dotted;
 }
 
 b,
 strong {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dfn {
-	font-style: italic;
+    font-style: italic;
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+    font-size: 2em;
+    margin: 0.67em 0;
 }
 
 mark {
-	background: #ff0;
-	color: #000;
+    background: #ff0;
+    color: #000;
 }
 
 small {
-	font-size: 80%;
+    font-size: 80%;
 }
 
 sub,
 sup {
-	font-size: 75%;
-	line-height: 0;
-	position: relative;
-	vertical-align: baseline;
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
 }
 
 sup {
-	top: -0.5em;
+    top: -0.5em;
 }
 
 sub {
-	bottom: -0.25em;
+    bottom: -0.25em;
 }
 
 img {
-	border: 0;
+    border: 0;
 }
 
 svg:not(:root) {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 figure {
-	margin: 1em 40px;
+    margin: 0;
 }
 
 hr {
-	box-sizing: content-box;
-	height: 0;
+    box-sizing: content-box;
+    height: 0;
 }
 
 pre {
-	overflow: auto;
+    overflow: auto;
 }
 
 code,
 kbd,
 pre,
 samp {
-	font-family: monospace, monospace;
-	font-size: 1em;
+    font-family: monospace, monospace;
+    font-size: 1em;
 }
 
 button,
@@ -177,86 +178,92 @@ input,
 optgroup,
 select,
 textarea {
-	color: inherit;
-	font: inherit;
-	margin: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
 }
 
 button {
-	overflow: visible;
+    overflow: visible;
 }
 
 button,
 select {
-	text-transform: none;
+    text-transform: none;
 }
 
 button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	-webkit-appearance: button;
-	cursor: pointer;
+    -webkit-appearance: button;
+    cursor: pointer;
 }
 
 button[disabled],
 html input[disabled] {
-	cursor: default;
+    cursor: default;
 }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
-	border: 0;
-	padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 input {
-	line-height: normal;
+    line-height: normal;
 }
 
 input[type="checkbox"],
 input[type="radio"] {
-	box-sizing: border-box;
-	padding: 0;
+    box-sizing: border-box;
+    padding: 0;
 }
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
-	height: auto;
+    height: auto;
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-	-webkit-appearance: none;
+    -webkit-appearance: none;
 }
 
 fieldset {
-	border: 1px solid #c0c0c0;
-	margin: 0 2px;
-	padding: 0.35em 0.625em 0.75em;
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
 }
 
 legend {
-	border: 0;
-	padding: 0;
+    border: 0;
+    padding: 0;
 }
 
 textarea {
-	overflow: auto;
+    overflow: auto;
 }
 
 optgroup {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 td,
 th {
-	padding: 0;
+    border: 1px solid #999;
+    padding: 0.5em;
 }
 
 /*--------------------------------------------------------------
@@ -267,15 +274,16 @@ button,
 input,
 select,
 textarea {
-	color: black;
-	font-family: sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.5;
+    color: #000;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.5;
 }
-.site-content{
-	font-size: 1.125em;
-	line-height: 1.6em;
+
+.site-content {
+    font-size: 1.125em;
+    line-height: 1.6em;
 }
 
 h1,
@@ -284,155 +292,161 @@ h3,
 h4,
 h5,
 h6 {
-	clear: both;
-	line-height: 1.3em;
-	margin-top: 2.5rem;
-	margin-bottom: 1rem;
-}
-h1 {
-	font-size: 2.4em;
-}
-h2{font-size: 2.2em;}
-h3{
-	font-size: 2em;
-}
-h4{
-	font-size: 1.8em;
-}
-h5{
-	font-size: 1.6em;
-}
-h6{
-	font-size: 1.4em;
+    font-family: 'Fira Sans', sans-serif;
+    clear: both;
+    line-height: 1.3em;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
 }
 
+h1 { font-size: 2.4em; }
+h2 { font-size: 2.2em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.4em; }
+
+
 p {
-	margin-bottom: 1.5em;
+    margin-bottom: 1.5em;
 }
 
 dfn,
 cite,
 em,
 i {
-	font-style: italic;
+    font-style: italic;
 }
 
 blockquote {
-	margin: 0 1.5em;
+    margin: 0 1.5em;
 }
 
 address {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 pre {
-	background: #eee;
-	font-family: "Courier 10 Pitch", Courier, monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
-	line-height: 1.6;
-	margin-bottom: 1.6em;
-	max-width: 100%;
-	overflow: auto;
-	padding: 1.6em;
+    background: #eee;
+    font-family: "Courier 10 Pitch", Courier, monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    margin-bottom: 1.6em;
+    max-width: 100%;
+    overflow: auto;
+    padding: 1.6em;
 }
 
 code,
 kbd,
 tt,
 var {
-	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-	font-size: 15px;
-	font-size: 0.9375rem;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    font-size: 15px;
+    font-size: 0.9375rem;
 }
 
 abbr,
 acronym {
-	border-bottom: 1px dotted #666;
-	cursor: help;
+    border-bottom: 1px dotted #666;
+    cursor: help;
 }
 
 mark,
 ins {
-	background: #fff9c0;
-	text-decoration: none;
+    background: #fff9c0;
+    text-decoration: none;
 }
 
 big {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
 html {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-	background: #fff; /* Fallback for when there is no custom background color defined. */
+    background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: "";
+    content: "";
 }
 
 blockquote,
 q {
-	quotes: "" "";
+    quotes: "" "";
+}
+blockquote {
+    font-size: 1.5em;
+    line-height: 1.4em;
+    margin: 1.5em 0 1.5em 2em;
+    position: relative;
+}
+blockquote::before {
+    font-family: 'FontAwesome';
+    content: "\f10d";
+    position: absolute;
+    left: -2em;
+    color: #ededed;
 }
 
 hr {
-	background-color: #ccc;
-	border: 0;
-	height: 1px;
-	margin-bottom: 1.5em;
+    background-color: #ccc;
+    border: 0;
+    height: 1px;
+    margin-bottom: 1.5em;
 }
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+    margin: 0 0 1.5em 3em;
 }
 
 ul {
-	list-style: disc;
+    list-style: disc;
 }
 
 ol {
-	list-style: decimal;
+    list-style: decimal;
 }
 
 li > ul,
 li > ol {
-	margin-bottom: 0;
-	margin-left: 1.5em;
+    margin-bottom: 0;
+    margin-left: 1.5em;
 }
 
 dt {
-	font-weight: bold;
+    font-weight: bold;
 }
 
 dd {
-	margin: 0 1.5em 1.5em;
+    margin: 0 1.5em 1.5em;
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+    height: auto; /* Make sure images are scaled correctly. */
+    max-width: 100%; /* Adhere to container width. */
 }
 
 table {
-	margin: 0 0 1.5em;
-	width: 100%;
+    margin: 0 0 1.5em;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -442,26 +456,24 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 3px solid;
-	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #fff;
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-	color: rgba(0, 0, 0, .8);
-	font-size: 12px;
-	font-size: 0.75rem;
-	line-height: 1;
-	padding: .6em 1em .4em;
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+    border: 3px solid;
+    border-color: #000;
+    border-radius: 0;
+    background: #fff;
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 12px;
+    font-size: 0.75rem;
+    line-height: 1;
+    padding: .6em 1em .4em;
 }
 
 button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-	border-color: #ccc #bbb #aaa;
-
-	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+    border-color: #000;
+    color: #fff;
 }
 
 button:focus,
@@ -472,8 +484,8 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-	border-color: #aaa #bbb #bbb;
-	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+    border-color: #000;
+    color: #fff;
 }
 
 input[type="text"],
@@ -481,24 +493,10 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-}
-
-select {
-	border: 1px solid #ccc;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
 }
 
 input[type="text"]:focus,
@@ -506,41 +504,21 @@ input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
 textarea:focus {
-	color: #111;
+    color: #111;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="tel"],
-input[type="range"],
-input[type="date"],
-input[type="month"],
-input[type="week"],
-input[type="time"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="color"] {
-	padding: 3px;
+input[type="search"] {
+    padding: 3px;
 }
 
 textarea {
-	padding-left: 3px;
-	width: 100%;
+    padding-left: 3px;
+    width: 100%;
 }
 
 /*--------------------------------------------------------------
@@ -550,378 +528,468 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+    color: #000;
 }
 
 a:visited {
-	color: purple;
+    color: #000;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+    color: #000;
 }
 
 a:focus {
-	outline: thin dotted;
+    outline: thin dotted;
 }
 
 a:hover,
 a:active {
-	outline: 0;
+    outline: 0;
 }
-
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
-	font-weight: 300;
-	font-size: 1em;
+    clear: both;
+    display: block;
+    float: left;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1em;
 }
 
 .main-navigation ul {
-	display: none;
-	list-style: none;
-	padding-left: 0;
+    display: none;
+    list-style: none;
+    padding-left: 0;
 }
 .main-navigation li {
-	position: relative;
+    position: relative;
 }
 
 .main-navigation ul ul {
-	display: none;
-	margin-left: 0.8em;
+    display: none;
+    margin-left: 0.8em;
 }
 
 
 .main-navigation a {
-	position: relative;
-	display: block;
-	padding: 0.8em 1em;
-	text-decoration: none;
-	line-height: 1.6em;
-	color: white;
+    position: relative;
+    display: block;
+    padding: 0.8em 1em;
+    text-decoration: none;
+    line-height: 1.6em;
+    color: white;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
-	background: #fff;
-	color: #000;
+    background: #fff;
+    color: #000;
 }
 
 .main-navigation ul {
-	list-style: none;
-	margin: 0;
+    list-style: none;
+    margin: 0;
 }
 .main-navigation a,
 .main-navigation ul ul li:lastchild a {
-	border-bottom: 1px solid white;
+    border-bottom: 1px solid white;
 }
 
 .main-navigation ul li:last-child a {
-	border-bottom: none;
+    border-bottom: none;
 }
 
 .main-navigation ul .toggled-on {
-	display: block;
+    display: block;
 }
 
 .main-navigation li {
-	border-top: 1px solid #eaeaea;
-	border-top: 1px solid rgba(51, 51, 51, 0.1);
-	position: relative;
+    border-top: 1px solid #eaeaea;
+    border-top: 1px solid rgba(51, 51, 51, 0.1);
+    position: relative;
 }
 
 .main-navigation .current-menu-item > a,
 .main-navigation .current-menu-ancestor > a,
 .main-navigation .current_page_item > a,
 .main-navigation .current_page_ancestor > a {
-	font-weight: 700;
+    font-weight: 700;
 }
 
 .main-navigation .nav-menu > ul > li:first-child,
 .main-navigation .nav-menu > li:first-child {
-	border-top: 0;
+    border-top: 0;
 }
 
 .main-navigation .menu-item-has-children > a,
 .main-navigation .page_item_has_children > a{
-	padding-right: 48px;
+    padding-right: 48px;
 }
 
 .no-js .main-navigation ul ul {
-	display: block;
+    display: block;
 }
 
 .dropdown-toggle {
-	position: absolute;
-	height: 27px;
-	width: 27px;
-	top: 12px;
-	right: 6px;
-	-webkit-box-sizing: content-box;
-	-moz-box-sizing: content-box;
-	box-sizing: content-box;
-	padding: 0;
-	font-family: 'FontAwesome';
-	background-color: #000;
-	border: 1px solid #fff;
-	content: "";
-	color: #fff;
-	text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    top: 12px;
+    right: 6px;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    font-family: 'FontAwesome';
+    background-color: #000;
+    border: 1px solid #fff;
+    content: "";
+    color: #fff;
+    text-transform: lowercase; /* Stop screen readers from reading the text as capital letters */
 }
 
 .dropdown-toggle:after {
-	content: "\f078";
-	font-size: 14px;
-	line-height: 27px;
-	position: relative;
-	top: 0;
-	left: 1px;
-	width: 27px;
+    content: "\f078";
+    font-size: 14px;
+    line-height: 27px;
+    position: relative;
+    top: 0;
+    left: 1px;
+    width: 27px;
 }
 
 
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
-	background-color: #fff;
-	color: #000;
+    background-color: #fff;
+    color: #000;
 }
 
 
 .dropdown-toggle.toggle-on:after {
-	content: "\f077";
+    content: "\f077";
 }
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {
-	display: block;
+    display: block;
 }
 .menu-toggle{
-	position: fixed;
-	z-index: 100;
-	bottom: 3em;
-	left: 1em;
-	font-size: 1em;
-	text-transform: uppercase;
-	background-color: black;
-	color: white;
-	border: solid 2px white;
-	transition: all ease-out 400ms;
+    position: fixed;
+    z-index: 100;
+    bottom: 3em;
+    left: 1em;
+    font-size: 1em;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border: solid 2px white;
+    transition: all ease-out 400ms;
 }
 .menu-toggle.hide{
-	bottom: -2.5em;
+    bottom: -2.5em;
 }
 /* Make sure the button doesn't hide when menu is open. */
 
 .toggled .menu-toggle.hide {
-	bottom: 1em;
+    bottom: 1em;
 }
 .menu-toggle:hover,
 .menu-toggle:focus{
-	text-decoration: underline;
+    text-decoration: underline;
 }
 @media screen and (min-width: 50em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
-	}
+    .menu-toggle {
+        display: none;
+    }
+    .main-navigation ul {
+        display: block;
+    }
 }
 /* Hovering menu. */
 
 .menu-navigation.toggled{
-	position: fixed;
-	bottom: 0;
-	padding: 1em;
-	z-index: 1;
+    position: fixed;
+    bottom: 0;
+    padding: 1em;
+    z-index: 1;
 }
 .nav-menu {
-	padding: 1em;
-	margin-bottom: 1em;
-	background-color: black;
+    padding: 1em;
+    margin-bottom: 1em;
+    background-color: black;
 }
 .main-navigation.toggled ul{
-	max-height: calc(100vh - 8em);
-	overflow-y: auto;
+    max-height: calc(100vh - 8em);
+    overflow-y: auto;
 }
 .main-navigation.toggled ul ul{
-	display: none;
+    display: none;
 }
 .main-navigation.toggled ul ul.toggled-on,
 .main-navigation.toggled ul ul.toggled-on > ul{
-	display: block;
+    display: block;
 }
 /* Horizontal menu on wide screens */
 @media screen and (min-width: 50em) {
-	.main-navigation,
-	.main-navigation.toggled{
-		position: relative;
-		min-height: 3.5em;
-		max-width: 100%;
-		margin: 0 auto;
-		padding: 0 3.5em;
-		background-color: black;
+    .main-navigation,
+    .main-navigation.toggled{
+        position: relative;
+        min-height: 3.5em;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 3.5em;
+        background-color: black;
 
-	}
-	.nav-menu {
-		padding: .3em 0 0 0;
-		background-color: transparent;
-	}
-	.main-navigation ul,
-	.main-navigation.toggled ul{
-		max-height: none;
-		padding-left: 0;
-		text-align: center;
-	}
-	.main-navigation.toggled ul{
-		overflow-y: visible;
-	}
-	/* Display the menu items in a horizontal order */
-	.main-navigation li {
-		display: inline-block;
-		border: none;
-	}
-	/* Add an outline to the drop-down menus */
-	.main-navigation ul ul{
-		outline: 1px solid #333333;
-	}
-	/* Left-align drop-down menu items */
-	.main-navigation li li{
-		display: block;
-		text-align: left;
-	}
-	.main-navigation a,
-	.main-navigation ul ul li:last-child a {
-		border-bottom: none;
-	}
-	/* Add an outline on hovered and focused menu items */
-	.main-navigation a:hover,
-	.main-navigation a:focus{
-		background: transparent;
-		color: #FFFFFF;
-		text-decoration: underline;
-		outline: solid 1px #b3b3b3;
-	}
-	/* Create hover and focus contrast on drop-down items */
-	.main-navigation li li a:hover,
-	.main-navigation li li a:focus{
-		background: #eeeeee;
-		color: black;
-		text-decoration: none;
-	}
-	/* Position drop-down menus absolutely */
-	.main-navigation ul ul.toggled-on{
-		position: absolute;
-		width: 12em;
-		display: block;
-		z-index: 10;
-		margin-left: 0;
-		background: black;
-	}
-	.main-navigation ul ul ul.toggled-on{
-		position: relative;
-	}
-	/* Indent 3rd level drop-down menus */
-	.main-navigation ul ul ul a {
-		padding-left: 2em;
-	}
-	/* Simplify the drop-down toggle */
-	.dropdown-toggle{
-		top: 11px;
-		right: 12px;
-		border: none;
-	}
-	.dropdown-toggle::after{
-		line-height: 27px;
-		width: 27px;
-	}
+    }
+    .nav-menu {
+        padding: .3em 0 0 0;
+        background-color: transparent;
+    }
+    .main-navigation ul,
+    .main-navigation.toggled ul{
+        max-height: none;
+        padding-left: 0;
+        text-align: center;
+    }
+    .main-navigation.toggled ul{
+        overflow-y: visible;
+    }
+    /* Display the menu items in a horizontal order */
+    .main-navigation li {
+        display: inline-block;
+        border: none;
+    }
+    /* Add an outline to the drop-down menus */
+    .main-navigation ul ul{
+        outline: 1px solid #333333;
+    }
+    /* Left-align drop-down menu items */
+    .main-navigation li li{
+        display: block;
+        text-align: left;
+    }
+    .main-navigation a,
+    .main-navigation ul ul li:last-child a {
+        border-bottom: none;
+    }
+    /* Add an outline on hovered and focused menu items */
+    .main-navigation a:hover,
+    .main-navigation a:focus{
+        background: transparent;
+        color: #FFFFFF;
+        text-decoration: underline;
+        outline: solid 1px #b3b3b3;
+    }
+    /* Create hover and focus contrast on drop-down items */
+    .main-navigation li li a:hover,
+    .main-navigation li li a:focus{
+        background: #eeeeee;
+        color: black;
+        text-decoration: none;
+    }
+    /* Position drop-down menus absolutely */
+    .main-navigation ul ul.toggled-on{
+        position: absolute;
+        width: 12em;
+        display: block;
+        z-index: 10;
+        margin-left: 0;
+        background: black;
+    }
+    .main-navigation ul ul ul.toggled-on{
+        position: relative;
+    }
+    /* Indent 3rd level drop-down menus */
+    .main-navigation ul ul ul a {
+        padding-left: 2em;
+    }
+    /* Simplify the drop-down toggle */
+    .dropdown-toggle{
+        top: 11px;
+        right: 12px;
+        border: none;
+    }
+    .dropdown-toggle::after{
+        line-height: 27px;
+        width: 27px;
+    }
 
 }
 .site-main .comment-navigation,
 .site-main .posts-navigation,
 .site-main .post-navigation {
-	margin: 0 0 1.5em;
-	overflow: hidden;
+    margin: 0 0 1.5em;
+    overflow: hidden;
 }
 
 .comment-navigation .nav-previous,
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
-	float: left;
-	width: 50%;
+    float: left;
+    width: 50%;
 }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
-	float: right;
-	text-align: right;
-	width: 50%;
+    float: right;
+    text-align: right;
+    width: 50%;
 }
+
+/*--------------------------------------------------------------
+## Other Navigation
+--------------------------------------------------------------*/
+
+.post-navigation {
+    padding: 2em 0;
+    font-family: "Fira Sans", sans-serif;
+    text-align: left;
+    overflow: hidden;
+}
+
+@media screen and (min-width: 50em) {
+    .post-navigation {
+        padding: 2em 3em;
+    }
+}
+
+.nav-links {
+    max-width: 45em;
+    margin: 0 auto;
+    padding: 0 .4em;
+}
+
+.post-navigation a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    padding: 1em;
+    border: 1px solid #c3c3c3;
+}
+
+.post-navigation a:hover,
+.post-navigation a:focus {
+    border-color: #000;
+}
+
+.post-navigation .post-title {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.post-navigation a:hover .post-title,
+.post-navigation a:focus .post-title {
+    text-decoration: underline;
+}
+
+.nav-previous {
+    padding-bottom: 1em;
+}
+
+@media screen and (min-width: 30em) {
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        padding: 0;
+    }
+
+    .post-navigation .nav-previous {
+        display: flex;
+        align-items: stretch;
+        float: left;
+        width: 48%;
+    }
+
+    .nav-previous {
+        padding-bottom: 0;
+    }
+
+    .post-navigation .nav-next {
+        display: flex;
+        align-items: stretch;
+        float: right;
+        text-align: right;
+        width: 48%;
+    }
+}
+
+.post-navigation .meta-nav {
+    display: block;
+}
+
+@media screen and (min-width: 30em) {
+    .post-navigation .meta-nav {
+        padding-bottom: 1em;
+    }
+}
+
+
 
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
 .screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
 }
 
 /* Do not show the outline on the skip link target. */
 #content[tabindex="-1"]:focus {
-	outline: 0;
+    outline: 0;
 }
 
 /*--------------------------------------------------------------
 # Alignments
 --------------------------------------------------------------*/
 .alignleft {
-	display: inline;
-	float: left;
-	margin-right: 1.5em;
+    display: inline;
+    float: left;
+    margin-right: 1.5em;
 }
 
 .alignright {
-	display: inline;
-	float: right;
-	margin-left: 1.5em;
+    display: inline;
+    float: right;
+    margin-left: 1.5em;
 }
 
 .aligncenter {
-	clear: both;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*--------------------------------------------------------------
@@ -939,9 +1007,9 @@ a:active {
 .site-content:after,
 .site-footer:before,
 .site-footer:after {
-	content: "";
-	display: table;
-	table-layout: fixed;
+    content: "";
+    display: table;
+    table-layout: fixed;
 }
 
 .clear:after,
@@ -950,8 +1018,10 @@ a:active {
 .site-header:after,
 .site-content:after,
 .site-footer:after {
-	clear: both;
+    clear: both;
 }
+
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -1008,7 +1078,7 @@ a:active {
     }
 }
 .site-title a{
-text-decoration: none;
+    text-decoration: none;
     color: inherit;
 }
 .site-title a:hover,
@@ -1028,80 +1098,300 @@ text-decoration: none;
     font-size: 110%;
     color: white;
 }
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
 }
 
 /* Make sure select elements fit in widgets. */
 .widget select {
-
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Global Size
+## Global
 --------------------------------------------------------------*/
-.site-main{
+
+.content-area {
+    overflow-x: hidden;
+}
+
+
+.site-main {
     margin: 1.4em;
     font-size: .8em;
     line-height: 1.6em;
-
 }
-@media screen and (min-width: 30em){
-    .site-main{
+
+@media screen and (min-width: 30em) {
+    .site-main {
         margin: 1.8em;
     }
-
 }
-@media screen and (min-width: 40em){
-    .site-main{
+
+@media screen and (min-width: 40em) {
+    .site-main {
         font-size: 1em;
     }
-    
 }
-@media screen and (min-width: 57em){
-    .site-main{
-        max-width: 47em;
+
+@media screen and (min-width: 57em) {
+    .site-main {
+        max-width: 45em;
         margin: 1.8em auto;
     }
-
 }
+
 /*--------------------------------------------------------------
 ## Posts and pages
 --------------------------------------------------------------*/
+
+.entry-content a,
+.entry-content a,
+.entry-summary a,
+.entry-summary a {
+    text-decoration: none;
+    border-bottom: 2px solid #c3c3c3;
+}
+
+.entry-content a:hover,
+.entry-content a:focus,
+.entry-summary a:hover,
+.entry-summary a:focus {
+    border-bottom: 3px solid #c3c3c3;
+    box-shadow: inset 0 -3px 0 #c3c3c3;
+}
+
+.entry-meta a,
+.entry-footer a {
+    text-decoration: none;
+}
+
+.entry-meta a:hover,
+.entry-meta a:focus,
+.entry-footer a:hover,
+.entry-footer a:focus {
+    border-bottom: 2px solid #000;
+}
+
 .sticky {
-	display: block;
+    display: block;
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+    margin: 0 0 1.5em;
+    padding-bottom: 2em;
+}
+
+.single .hentry,
+.page .hentry {
+    padding-bottom: 0;
+}
+
+.entry-title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    line-height: 1.3em;
+    text-align: center;
+    color: #000;
+    word-wrap: break-word; /* Catch and wrap very long words on small screens */
+}
+
+@media screen and (min-width: 40em) {
+    .entry-title {
+        margin-top: 1.5em;
+        font-size: 2.8em;
+        line-height: 1.3em;
+    }
+}
+
+.entry-title a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.entry-title a:hover,
+.entry-title a:focus {
+    text-decoration: underline;
+}
+
+
+.deck {
+    margin-bottom: 2.5em;
+}
+
+.deck p {
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+/* Post Meta */
+.entry-meta {
+    margin: 0 -1.473684210526316em;
+    padding: 2em 1.473684210526316em;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 95%;
+    font-style: italic;
+    text-align: center;
+    background: #eee;
+}
+
+@media screen and (min-width: 30em) {
+    .entry-meta {
+        margin: 0 -1.894736842105263em;
+    }
+}
+
+@media screen and (min-width: 57em) {
+    .entry-meta {
+        position: relative;
+        width: 100%;
+        width: 100vw;
+        left: 0;
+        left: calc((-100vw + 52.2em) / 2);
+        overflow: hidden;
+    }
+}
+
+.author-avatar {
+    height: 50px;
+    width: 50px;
+    margin: 0 auto 1em;
+}
+
+.author-avatar img {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: 50em) {
+
+    .has-avatar {
+        display: inline-block;
+        text-align: left;
+        width: 20em;
+    }
+
+    .author-avatar {
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin-right: 1.5em;
+        margin-bottom: 0;
+    }
+
 }
 
 .byline,
+.posted-on,
+.entry-meta .comments-link {
+    display: block;
+    padding:  0;
+}
+
+.entry-meta a {
+    font-weight: 700;
+}
+
 .updated:not(.published) {
-	display: none;
+    display: none;
 }
 
 .single .byline,
 .group-blog .byline {
-	display: inline;
+    display: inline;
 }
 
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+    margin: 1.5em 0 0;
 }
 
 .page-links {
-	clear: both;
-	margin: 0 0 1.5em;
+    clear: both;
+    margin: 0 0 1.5em;
+}
+
+.site-content li {
+    line-height: 1.6em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.site-content li > ul {
+    margin-bottom: -1em;
+}
+
+.site-content li:last-child {
+    margin-bottom: 0;
+}
+
+.deck,
+.entry-content {
+    margin: 1.5em 0 0;
+}
+
+@media screen and (min-width: 50em) {
+
+    .deck,
+    .entry-content {
+        padding: 0 3em;
+    }
+}
+
+.entry-footer::before,
+.entry-footer::after {
+    display: block;
+    content: "";
+    width: 7em;
+    border-bottom: 1px solid #c3c3c3;
+    margin: 2em auto;
+}
+
+.entry-footer::before {
+    width: 3.5em;
+}
+
+.entry-footer {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 95%;
+    font-style: italic;
+    text-align: center;
+}
+
+@media screen and (min-width: 40em) {
+    .entry-footer {
+        padding: 0 1.5em;
+    }
+}
+
+.entry-footer span {
+    margin: .5em 0;
+}
+
+.entry-footer span::after {
+    content: "|";
+    padding: 0 1em;
+}
+
+.entry-footer span:last-of-type::after {
+    content: "";
+    padding: 0;
+}
+
+.entry-footer span a {
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
 }
 
 /*--------------------------------------------------------------
@@ -1109,18 +1399,18 @@ text-decoration: none;
 --------------------------------------------------------------*/
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
-	display: none;
+    display: none;
 }
 
 /*--------------------------------------------------------------
 ## Comments
 --------------------------------------------------------------*/
 .comment-content a {
-	word-wrap: break-word;
+    word-wrap: break-word;
 }
 
 .bypostauthor {
-	display: block;
+    display: block;
 }
 
 /*--------------------------------------------------------------
@@ -1129,12 +1419,12 @@ text-decoration: none;
 /* Globally hidden elements when Infinite Scroll is supported and in use. */
 .infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
 .infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-	display: none;
+    display: none;
 }
 
 /* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
-	display: block;
+    display: block;
 }
 
 /*--------------------------------------------------------------
@@ -1143,87 +1433,223 @@ text-decoration: none;
 .page-content .wp-smiley,
 .entry-content .wp-smiley,
 .comment-content .wp-smiley {
-	border: none;
-	margin-bottom: 0;
-	margin-top: 0;
-	padding: 0;
+    border: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
 iframe,
 object {
-	max-width: 100%;
+    max-width: 100%;
 }
 
 /*--------------------------------------------------------------
 ## Captions
 --------------------------------------------------------------*/
 .wp-caption {
-	margin-bottom: 1.5em;
-	max-width: 100%;
+    font-family: "Fira Sans", sans-serif;
+    font-style: italic;
+    max-width: 100%;
+}
+
+.wp-caption .aligncenter {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.wp-caption.alignright,
+.wp-caption.alignleft {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.wp-caption em {
+    font-style: normal; /* Inverse emphasis because of all italics */
 }
 
 .wp-caption img[class*="wp-image-"] {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.wp-caption .wp-caption-text {
-	margin: 0.8075em 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .wp-caption-text {
-	text-align: center;
+    display: block;
+    position: relative;
+    margin: 1.5em 0 2em 2em;
+    padding: 0 1em .5em;
+    font-size: 90%;
+    color: #333;
+    border-right: 1px solid #c3c3c3;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.wp-caption-text::before {
+    position: absolute;
+    top: -3px;
+    left: -1.4em;
+    display: block;
+    font-family: "FontAwesome";
+    font-style: normal;
+    color: #808080;
+    content: "\f148";
+    transform: rotate(90deg);
+}
+
+.aligncenter .wp-caption-text,
+.alignnone .wp-caption-text {
+    margin-left: 30%;
+    margin-bottom: 2em;
+}
+
+.alignright .wp-caption-text,
+.alignleft .wp-caption-text {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*--------------------------------------------------------------
+## Images
+--------------------------------------------------------------*/
+
+img.aligncenter {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+img.alignright,
+img.alignleft {
+    margin-bottom: 1.5em;
+}
+
+.centered-image {
+    max-width: calc(100% + 2.8em);
+    margin: 1.5em -1.4em;
+}
+
+@media screen and (min-width: 30em) {
+
+    .centered-image {
+        max-width: calc(100% + 3.6em);
+        margin: 1.5em -1.8em;
+    }
+
+}
+
+@media screen and (min-width: 50em){
+    img.alignright,
+    .wp-caption.alignright {
+        margin-right: -1.5em;
+    }
+    img.alignleft,
+    .wp-caption.alignleft{
+        margin-left: -1.5em;
+    }
+
+    .centered-image {
+        max-width: calc(100% + 6em);
+        margin-right: -3em;
+        margin-left: -3em;
+    }
+
+}
+
+@media screen and (min-width: 74em){
+    img.alignright,
+    .wp-caption.alignright {
+        margin-right: -3em;
+    }
+    img.alignleft,
+    .wp-caption.alignleft {
+        margin-left: -3em;
+    }
+
 }
 
 /*--------------------------------------------------------------
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
-	margin-bottom: 1.5em;
+    margin: 1.5em 0;
 }
 
 .gallery-item {
-	display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	width: 100%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+    padding: 1em;
+}
+
+.gallery-item img {
+    display: block;
+}
+
+.gallery-item a {
+    display: inline-block;
+    border-bottom: none;
+}
+
+.gallery-item a:hover,
+.gallery-item a:focus {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.gallery-item a img {
+    padding: .5em;
+    margin: 0 auto;
+    border: 1px solid #fff;
+}
+
+.gallery-item a:hover img,
+.gallery-item a:focus img {
+    border-color: #c3c3c3;
 }
 
 .gallery-columns-2 .gallery-item {
-	max-width: 50%;
+    max-width: 50%;
 }
 
+
 .gallery-columns-3 .gallery-item {
-	max-width: 33.33%;
+    max-width: 33.33%;
 }
 
 .gallery-columns-4 .gallery-item {
-	max-width: 25%;
+    max-width: 25%;
 }
 
 .gallery-columns-5 .gallery-item {
-	max-width: 20%;
+    max-width: 20%;
 }
 
 .gallery-columns-6 .gallery-item {
-	max-width: 16.66%;
+    max-width: 16.66%;
 }
 
 .gallery-columns-7 .gallery-item {
-	max-width: 14.28%;
+    max-width: 14.28%;
 }
 
 .gallery-columns-8 .gallery-item {
-	max-width: 12.5%;
+    max-width: 12.5%;
 }
 
 .gallery-columns-9 .gallery-item {
-	max-width: 11.11%;
+    max-width: 11.11%;
 }
 
 .gallery-caption {
-	display: block;
+    display: block;
+    margin: 0;
+    font-family: "Fira Sans", sans-serif;
+    border: none;
+}
+
+.gallery-caption::before {
+    content: "";
 }

@@ -118,7 +118,7 @@ function barrier_reef_orchestra_scripts() {
 
 	wp_enqueue_style( 'barrier-reef-orchestra-fontawesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css' );
 
-	wp_enqueue_script( 'barrier-reef-orchestra-navigation', get_template_directory_uri() . '/js/navigation.js', array('jquery'), '20151215', true );
+	wp_enqueue_script( 'barrier-reef-orchestra-navigation', get_template_directory_uri() . '/js/functions.js', array('jquery'), '20151215', true );
 
 	wp_localize_script( 'barrier-reef-orchestra-navigation', 'screenReaderText', array(
 		'expand'   => '<span class="screen-reader-text">' . __( 'expand child menu', 'barrier-reef-orchestra' ) . '</span>',

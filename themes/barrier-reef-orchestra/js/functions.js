@@ -1,6 +1,6 @@
 
 /**
- * File navigation.js.
+ * File functions.js.
  *
  * Handles toggling the navigation menu for small screens and enables TAB key
  * navigation support for dropdown menus.
@@ -134,4 +134,7 @@
 		position = $(this).scrollTop();
 	});
 
+	//Wrap centered image in a new Figure Element
+
+	$('img.aligncenter').wrap('<figure class = "centered-image"></figure>');
 } )( jQuery );
