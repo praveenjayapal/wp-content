@@ -99,7 +99,7 @@ add_action( 'after_setup_theme', 'barrier_reef_orchestra_content_width', 0 );
  */
 function barrier_reef_orchestra_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'barrier-reef-orchestra' ),
+		'name'          => esc_html__( 'Widget Area', 'barrier-reef-orchestra' ),
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'barrier-reef-orchestra' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
