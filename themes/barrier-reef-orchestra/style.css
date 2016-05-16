@@ -1266,6 +1266,7 @@ a:active {
 
 .widget_calendar {
     font-family: "Fira Sans", sans-serif;
+    margin: 10px 10px 10px 10px;/*changed by boopathi*/
 }
 
 .widget_calendar caption {
@@ -1288,7 +1289,7 @@ a:active {
     padding: .2em;
     font-size: .8em;
     text-align: center;
-    background: #d6d6d6;
+    background: #47c324;/*changed by boopathi*/
     border: 3px solid white;
 }
 
@@ -1487,7 +1488,7 @@ a:active {
     .sidebar-right .widget,
     .sidebar-left .widget {
         padding: 0 1.8em;
-        margin-bottom: 0;
+        /*margin-bottom: 0;changed by boopathi*/
     }
 
     .sidebar-right .widget::after,
@@ -1496,7 +1497,7 @@ a:active {
         width: 33%;
         margin: 4em auto;
         content: "";
-        border-bottom: 1px solid #c3c3c3;
+        border-bottom: 0px solid #c3c3c3;/*removed the line by boopathi*/
     }
 
 
@@ -1840,7 +1841,7 @@ a:active {
     display: block;
     content: "";
     width: 7em;
-    border-bottom: 1px solid #c3c3c3;
+    border-bottom: 0px solid #c3c3c3;/*removed the line by boopathi*/
     margin: 2em auto;
 }
 
@@ -1853,6 +1854,7 @@ a:active {
     font-size: 95%;
     font-style: italic;
     text-align: center;
+    background: darkcyan;/*added background color for comment link by boopathi*/
 }
 
 @media screen and (min-width: 40em) {
@@ -2398,7 +2400,8 @@ img.alignleft {
     font-family: "Fira Sans" , sans-serif;
     text-align: center;
     color: white;
-    background-color: black;
+    background-color:darkslategray;/*added by boopathi*/
+    margin: 1em;/*added by boopathi*/
 }
 .site-footer a {
     color: white;
