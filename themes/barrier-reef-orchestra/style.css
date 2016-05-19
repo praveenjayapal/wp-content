@@ -3,7 +3,7 @@ Theme Name: barrier reef orchestra
 Theme URI: http://underscores.me/
 Author: BNAP
 Author URI: http://underscores.me/
-Description: Description
+Description: Team : Praveen Jayapal, Ashok Kumar Ramajayam, Narendra Barathwaj Sundaramoorthy and Boopathi Selvaraj
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -635,6 +635,7 @@ a:active {
 }
 
 .dropdown-toggle {
+	font-family: 'FontAwesome';
     position: absolute;
     height: 27px;
     width: 27px;
@@ -1033,6 +1034,7 @@ a:active {
     background-color: #1e90ff;
     background-size: cover;
 }
+
 .site-logo{
     position: relative;
 }
@@ -1044,7 +1046,7 @@ a:active {
     display: block;
     width: 2em;
     height: 2em;
-    background: black;
+    background: #1e90ff;
     border: 1px solid white;
     color: white;
     text-decoration: none;
@@ -1071,7 +1073,7 @@ a:active {
     margin: 1em 0 0;
     font-size: 2.4em;
     font-weight: bold;
-    line-height: 0.5em;
+    line-height: 0.8em;
     color: white;
     text-transform: uppercase;
     word-break: keep-all;
